@@ -19,6 +19,7 @@ public class TodoController {
 	{
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("listOfTodos", todoService.getAllTodos());
+		System.out.println("!!!");
 		mv.setViewName("listTodo");
 		return mv;
 	}
