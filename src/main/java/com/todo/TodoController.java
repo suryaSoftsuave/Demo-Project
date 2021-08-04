@@ -46,7 +46,6 @@ public class TodoController {
 		}
 		else {
 			todoService.saveTodo(todo);
-			System.out.println("Todo successfully added");
 			mv.addObject("listOfTodos", todoService.getAllTodos());
 			mv.setViewName("listTodo");
 		}
